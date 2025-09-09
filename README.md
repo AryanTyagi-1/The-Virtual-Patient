@@ -19,8 +19,8 @@ You should see the version info pop up.
 For lightweight use, grab a model like Gemma or LLaMA 7B:
 bash
 ollama pull gemma:latest
-* or
- ollama pull llama7b:latest.
+ or
+ollama pull llama7b:latest.
 This downloads and prepares the model locally so you can fine-tune or run it.
 3. Prepare Your Training Data
 Format your conversation scripts into JSON or text file with clear labeling of patient personas and turns, for example:
