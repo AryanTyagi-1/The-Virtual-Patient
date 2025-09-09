@@ -12,13 +12,11 @@ Imagine training a friendly, realistic virtual patient who can talk with medical
 1. Install Ollama
 Head over to ollama.com and download the installer for your OS. They make it super simple — just install and you’re done.
 After installing, open a terminal and check it’s working:
-bash
 ollama --version
 You should see the version info pop up.
 2. Pull Your Base Model
 For lightweight use, grab a model like Gemma or LLaMA 7B:
-bash
-ollama pull gemma:latest
+toh ollama pull gemma:latest
  or
 ollama pull llama7b:latest.
 This downloads and prepares the model locally so you can fine-tune or run it.
@@ -35,11 +33,9 @@ json
 Keep it consistent so the model learns different personalities well.
 4. Fine-tune Using LoRA (Recommended for Efficient Training)
   Install some Python dependencies:
- bash
- pip install peft transformers accelerate.
+   pip install peft transformers accelerate.
 5. Run Your Virtual Patient Locally
 Start the model in Ollama:
-bash
 ollama run your-finetuned-model
 You can chat with the patient in different personas by providing persona prompts, e.g.
 "You are an anxious patient. Respond to the doctor's questions accordingly."
